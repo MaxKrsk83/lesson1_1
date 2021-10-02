@@ -15,12 +15,7 @@ public class HW1 {
         System.out.println("Результат выполнения четвертого метода: " + fn4(5));
         fn5("Максим");
 
-        int year = 2024;
-        if (IsLeapYear(year)){
-            System.out.println("Год " + year + " высокосный");
-        }else {
-            System.out.println("Год " + year + " не высокосный");
-        }
+        PrintLeapYear(2024);
     }
     public static float fn1(float a, float b,float c,float d) {
         return a * (b + (c / d));
@@ -40,6 +35,13 @@ public class HW1 {
     }
     public static void fn5(String name){
         System.out.println("Привет, " + name + "!");
+    }
+    public static void PrintLeapYear(int year){
+        if (IsLeapYear(year)){
+            System.out.println("Год " + year + " высокосный");
+        }else {
+            System.out.println("Год " + year + " не высокосный");
+        }
     }
     public static boolean IsLeapYear(int year){
         if (year%4==0){
